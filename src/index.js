@@ -1,14 +1,16 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
-import App from "./components/app";
+import { BrowserRouter } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
+
+import App from "./components/app";
 
 class Index extends Component {
   render() {
     return (
-      <div>
+      <BrowserRouter>
         <App />
-      </div>
+      </BrowserRouter>
     );
   }
 }
