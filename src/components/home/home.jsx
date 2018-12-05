@@ -5,7 +5,11 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <h1>Home</h1>
+        <h1>Homepage van movie-app</h1>
+        <p>
+          We zijn op dit moment nog druk bezig het toevoegen van
+          functionaliteiten.
+        </p>
       </div>
     );
   }

@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
 
-import Home from "./home";
-import Movies from "./movies";
-import Tickets from "./tickets";
+import Home from "./home/home";
+import Movies from "./movies/movies";
+import Tickets from "./tickets/tickets";
 
 class Main extends Component {
   state = {};
