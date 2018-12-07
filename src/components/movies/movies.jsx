@@ -8,41 +8,47 @@ class Movies extends Component {
         id: 1,
         name: "creed",
         image:
-          "https://upload.wikimedia.org/wikipedia/en/thumb/2/24/Creed_poster.jpg/220px-Creed_poster.jpg",
-        tickets: 12
+          "https://upload.wikimedia.org/wikipedia/en/thumb/2/24/Creed_poster.jpg/220px-Creed_poster.jpg"
       },
       {
         id: 2,
         name: "creed1",
-        image: "https://placeimg.com/400/600/any",
-        tickets: 5
+        image: "https://placeimg.com/400/600/any"
       },
       {
         id: 3,
         name: "creed2",
-        image: "https://placeimg.com/400/600/any",
-        tickets: 3
+        image: "https://placeimg.com/400/600/any"
       },
       {
         id: 4,
         name: "creed3",
-        image: "https://placeimg.com/400/600/any",
-        tickets: 27
+        image: "https://placeimg.com/400/600/any"
       }
     ]
+  };
+  onAdd = () => {
+    console.log("on add");
+  };
+  onEdit = () => {
+    console.log("on edit");
+  };
+  onDelete = () => {
+    console.log("on delete");
   };
   render() {
     return (
       <React.Fragment>
-        {this.state.movies.map(movie => (
-          <Movie
-            key={movie.key}
-            name={movie.name}
-            image={movie.image}
-            alt={movie.name}
-            tickets={movie.tickets}
-          />
-        ))}
+        <div className="row">
+          {this.state.movies.map(movie => (
+            <Movie
+              id={movie.id}
+              name={movie.name}
+              image={movie.image}
+              alt={movie.name}
+            />
+          ))}
+        </div>
       </React.Fragment>
     );
   }

@@ -9,7 +9,7 @@ class Main extends Component {
   state = {};
   render() {
     return (
-      <div className="row">
+      <div className="container-fluid">
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/movies" component={Movies} />
